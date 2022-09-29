@@ -6,8 +6,19 @@
 //
 
 import Foundation
+/*
+ Struct hierarchy
+ ReplyJSON
+ |-	FeesJSON
+ |	|-	SuccessTiersJSON array
+ |-	CharityJSON array
+ |-	PromoJSON array
+ 
+ Also a weird issue, fields of the Double type needs to be set to optional or the JSON parser
+ can throw an exception. Not sure why it does this.
+ */
 
-// Parent struct.
+// Root struct.
 struct ReplyJSON : Codable {
 	let CategoryId : Int
 	let Name : String
@@ -22,6 +33,8 @@ struct ReplyJSON : Codable {
 	let MaximumPhotoCount : UInt
 	let Charities : [CharityJSON]
 	let Promotions : [PromoJSON]
+	// Because I do not know the data type, this will always be set to empty upon
+	// construction.
 	let EmbeddedContentOptions : [Any]
 	let MaximumTitleLength : UInt
 	let AreaOfBusiness : Int
@@ -69,6 +82,7 @@ struct ReplyJSON : Codable {
 		MaximumPhotoCount = try container.decode(UInt.self, forKey: .MaximumPhotoCount)
 		Charities = try container.decode([CharityJSON].self, forKey: .Charities)
 		Promotions = try container.decode([PromoJSON].self, forKey: .Promotions)
+		// Always empty
 		EmbeddedContentOptions = []
 		MaximumTitleLength = try container.decode(UInt.self, forKey: .MaximumTitleLength)
 		AreaOfBusiness = try container.decode(Int.self, forKey: .AreaOfBusiness)

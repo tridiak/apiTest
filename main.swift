@@ -1,5 +1,6 @@
 import Foundation
 
+// Option to change API URL though it is limited because this app has a hard-coded JSON struct layout.
 var passedURL : String? = nil
 if CommandLine.argc > 2 {
 	if CommandLine.arguments[1] == "-u" {
@@ -18,7 +19,7 @@ var url: URL! = nil
 if let passedURL = passedURL {
 	url = URL(string: passedURL)
 }
-else {
+if url == nil {
 	url = URL(string: "https://api.tmsandbox.co.nz/v1/Categories/6328/Details.json?catalogue=false")!
 }
 
@@ -38,11 +39,9 @@ QueryServerAPIAsync(url: url, done: { data, resp, err in
 	}
 	
 	do {
-		
 		let reply = try CreateReplyJSON(data: data)
 		if try APICheck(reply: reply) { print("pass"); exit(0) }
 		else { print("fail"); exit(-1) }
-		
 	}
 	catch let E {
 		print(E.localizedDescription)
