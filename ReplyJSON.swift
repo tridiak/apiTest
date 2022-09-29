@@ -1,6 +1,5 @@
 //
-//  ReplyStruct.swift
-//  replyParse
+//  ReplyJSON.swift
 //
 //  Created by tridiak on 28/09/22.
 //

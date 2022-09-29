@@ -1,3 +1,9 @@
+//
+//  ApiCheck.swift
+//
+//  Created by tridiak on 28/09/22.
+//
+
 import Foundation
 
 // This function does the actual check. Change if you want to check other criteria

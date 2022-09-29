@@ -1,6 +1,5 @@
 //
 //  QueryServer.swift
-//  replyParse
 //
 //  Created by tridiak on 28/09/22.
 //

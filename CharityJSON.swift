@@ -1,6 +1,5 @@
 //
-//  Charity.swift
-//  replyParse
+//  CharityJSON.swift
 //
 //  Created by tridiak on 28/09/22.
 //

@@ -1,6 +1,5 @@
 //
-//  Promotions.swift
-//  replyParse
+//  PromotionsJSON.swift
 //
 //  Created by tridiak on 28/09/22.
 //

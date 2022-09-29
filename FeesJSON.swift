@@ -1,6 +1,5 @@
 //
-//  FeesStruct.swift
-//  replyParse
+//  FeesJSON.swift
 //
 //  Created by tridiak on 28/09/22.
 //

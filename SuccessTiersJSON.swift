@@ -1,6 +1,5 @@
 //
-//  SuccessTiers.swift
-//  replyParse
+//  SuccessTiersJSON.swift
 //
 //  Created by tridiak on 28/09/22.
 //
