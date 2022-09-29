@@ -4,7 +4,7 @@
 ```
 api_make.sh
 ```
-Compiles the tool.<br>
+Compiles the tool. Uses zsh (macOS standard).<br>
 macOS version 12.6, Build 21G115<br>
 Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)<br>
 Architecture is intel 64bit. In theory it should compile on mac silicon, but I don't have one to test it with.<br>
