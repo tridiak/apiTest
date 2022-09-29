@@ -30,7 +30,7 @@ The tool is only designed for a specific JSON format return by
 The tool will return
 - pass (0) for criteria success
 - fail (-1) for criteria failure
-- Error message (1) usually for JOSN parsing error or server access error
+- Error message (1) usually for JSON parsing error or server access error
 
 ## Criteria Configuration
 You can change the test criteria by editing the ```ApiCheck.swift``` file.
